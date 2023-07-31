@@ -1,38 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+
 .App {
+  text-align: center;
+  padding: 20px 20px 0 20px;
+}
+
+.contents{
+  display: flex;
+  justify-content: center;
+}
+
+/* Monitor */
+.monitor-container{
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+
+.monitor{
+  text-align: left;
+}
+
+.monitor h2{
+  font-size: 50px;
+}
+
+/* Search */
+.searchInput{
+  margin: 10px 0;
+}
+
+/* Items */
+.item-container{
+  width: 70%;
+}
+
+.product-container{
+  width: 100%;
+  display: flex;
+  height: 55vh;
+  overflow-y: scroll;
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  margin-bottom: 10px;
+  width: 24%;
+  height: 55%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.card-content{
+  padding-bottom: 10px;
+  height: 30vh;
+}
+
+.card-img{
+  height: 60%;
+  overflow: hidden;
+}
+
+.card-img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.card-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.card-detail{
+  height: 40%;
+  text-align: left;
+  font-size: 0.75rem;
+  padding: 0 10px;
+}
+
+.card-detail button{
+  background: black;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* buyinglist */
+.buyedItem-container{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buyedItem{
+  width: 90%;
+  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+}
+
+.buyedItem table{
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buyedItem table th{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.23);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total-price{
+  text-align: left;
+  font-weight: bold;
 }

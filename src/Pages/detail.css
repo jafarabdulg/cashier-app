@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+.container-detail{
+    width: 50%;
+    margin-left: 20px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background: grey;
+}
+
+header button{
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+header button:hover{
+    background: white;
+    color: black;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+}
+
+.img{
+    padding: 10px;
+    height: 60%;
+    width: 100%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.table-detail{
+    width: 100%;
+    height: 40%;
+    border: 1px solid black;
+}
+
+.trhead{
+    width: 20%;
+}
+
+.sp{
+    width: 5%;
+}
